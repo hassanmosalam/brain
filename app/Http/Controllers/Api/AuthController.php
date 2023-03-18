@@ -43,8 +43,9 @@ class AuthController extends Controller
             return response()->json([
                 'token' => $token,
                 'status_code' => 200,
-                'message' => "Login successfuly"
+                'message' => "Signed Up successfuly"
             ], 200);
+
         } catch (Exception $e) {
             throw $e;
             return response()->json([
